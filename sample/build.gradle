@@ -29,7 +29,7 @@ apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion project.targetSdkVersion.toInteger()
-    buildToolsVersion project.buildToolsVersion
+    buildToolsVersion '28.0.3'
 
 
     defaultConfig {
@@ -50,8 +50,8 @@ android {
 }
 
 dependencies {
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$project.kotlinVersion"
-    implementation "com.android.support:appcompat-v7:$project.supportVersion"
-    implementation "com.android.support:design:$project.supportVersion"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$project.kotlinVersion"
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
     implementation project(':arctoolbarview')
 }

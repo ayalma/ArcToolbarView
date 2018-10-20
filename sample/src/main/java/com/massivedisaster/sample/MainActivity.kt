@@ -27,7 +27,7 @@ package com.massivedisaster.sample
 
 import android.animation.ValueAnimator
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.util.DisplayMetrics
 import android.view.animation.AccelerateInterpolator
 import kotlinx.android.synthetic.main.activity_main.*

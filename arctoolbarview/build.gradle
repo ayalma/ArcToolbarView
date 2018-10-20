@@ -24,7 +24,7 @@
  */
 
 apply plugin: 'com.android.library'
-apply plugin: 'com.novoda.bintray-release'
+//apply plugin: 'com.novoda.bintray-release'
 
 android {
     compileSdkVersion project.targetSdkVersion.toInteger()
@@ -40,12 +40,12 @@ android {
 }
 
 dependencies {
-    implementation "com.android.support:appcompat-v7:$project.supportVersion"
-    implementation "com.android.support:design:$project.supportVersion"
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$project.kotlinVersion"
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$project.kotlinVersion"
 }
 
-publish {
+/*publish {
     userOrg = userOrgBase
     groupId = moduleBase
     artifactId = 'arctoolbarview'
@@ -54,7 +54,7 @@ publish {
     desc = 'An Arc view for the android Toolbar.'
     website = websiteBase
     licences = licensesBase
-}
+}*/
 
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'

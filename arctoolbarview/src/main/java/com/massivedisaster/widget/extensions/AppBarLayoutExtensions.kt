@@ -25,7 +25,7 @@
 
 package com.massivedisaster.widget.extensions
 
-import android.support.design.widget.AppBarLayout
+import com.google.android.material.appbar.AppBarLayout
 import com.massivedisaster.widget.ArcToolbarView
 
 fun ArcToolbarView.setAppBarLayout(appbar: AppBarLayout) {
